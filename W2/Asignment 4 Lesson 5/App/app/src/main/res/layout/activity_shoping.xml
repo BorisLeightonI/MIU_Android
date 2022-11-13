@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Shoping">
+
+
+    <TextView
+        android:id="@+id/tvUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:text="Hello UserName" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Shop By Categories"
+        android:textSize="17sp"
+        android:textAlignment="center" />
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/tvItem1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/ic_launcher_background"
+                android:text="Electronics" />
+            <Button
+                android:id="@+id/btnItem2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_launcher_background"
+                android:drawableTop="@drawable/ic_launcher_foreground"
+                android:padding="20dp"
+                android:text="Clothing"
+
+                 />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/tvItem3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/ic_launcher_background"
+                android:text="Beauty" />
+            <TextView
+                android:id="@+id/tvItem4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/ic_launcher_background"
+                android:text="Food" />
+        </TableRow>
+
+    </TableLayout>
+</LinearLayout>
