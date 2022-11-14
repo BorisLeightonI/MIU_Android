@@ -1,0 +1,26 @@
+package com.example.assignment5lesson6
+
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import androidx.recyclerview.widget.RecyclerView
+//import kotlinx.android.synthetic.main.item_list.view.*
+
+class MyAdapter(var blist:ArrayList<Book>):RecyclerView.Adapter<MyAdapter.MyViewHolder>() {
+
+    inner class MyViewHolder(itemView: View): RecyclerView.ViewHolder(itemView)
+
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
+        val view = LayoutInflater.from(parent.context).inflate(R.layout.item_list, parent, false)
+        return MyViewHolder(view)
+    }
+
+    override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
+        holder.itemView.name.text = blist[position].name
+        holder.itemView.author.text = blist[position].author
+    }
+
+    override fun getItemCount(): Int {
+        return blist.size
+    }
+}
